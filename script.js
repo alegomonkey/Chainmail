@@ -1,3 +1,4 @@
+
 function addListeners () {
   document.querySelectorAll("li").forEach(
     menuItem => menuItem.onclick = () => showOnly(menuItem)
