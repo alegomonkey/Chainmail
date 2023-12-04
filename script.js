@@ -1,4 +1,3 @@
-
 function addListeners () {
   document.querySelectorAll("li").forEach(
     menuItem => menuItem.onclick = () => showOnly(menuItem)
@@ -6,16 +5,15 @@ function addListeners () {
 }	
 
 addListeners();
-function showOnly(page) {	    
+function showOnly(page) {	 
   document.querySelectorAll(".description").forEach(
     descriptionDiv => {
       descriptionDiv.style.opacity = 0;
       descriptionDiv.style.left = "100%";
     }
   )	    
-  document.querySelector( "#description-of-" + page.innerHTML ).style.opacity = 1;
-  document.querySelector( "#description-of-" + page.innerHTML ).style.left = "1%";
- 
+  document.querySelector( "#description-of-" + page.innerHTML).style.opacity = 1;
+  document.querySelector( "#description-of-" + page.innerHTML).style.left = "1%";
 }
 
 let currentSlideOffset = 0 ;
