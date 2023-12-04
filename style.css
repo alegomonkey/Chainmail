@@ -1,15 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box ;
+  box-sizing: border-box;
 }
 
 :root {
-  --h: 0 ; 
-  --s: 0% ;
-  --l: 100% ;
+  --h: 0;
+  --s: 0%;
+  --l: 100%;
   --a: 0.9;
-  --text: hsl(var(--h) var(--s) calc(var(--l) * .95)  ) ;
+  --text: hsl(var(--h) var(--s) calc(var(--l) * .95));
   --light: hsla(var(--h), var(--s), calc(var(--l) * .80), var(--a));
   --medium: hsla(var(--h), var(--s), calc(var(--l) * .60), var(--a));
   --dark: hsla(var(--h), var(--s), calc(var(--l) * .40), var(--a));
@@ -26,8 +26,7 @@ body {
     "header" 15vh
     "body" 70vh
     "footer" 15vh
-   /1fr           
-;
+    /1fr;
   overflow-x: hidden;
 }
 
@@ -56,7 +55,7 @@ body {
   color: var(--accent);
   align-items: center;
   justify-content: flex-end;
-  
+
 }
 
 li {
@@ -82,11 +81,11 @@ li {
   z-index: 0;
 }
 
-.description{
+.description {
   transition: all 1s ease-out;
 }
 
-.text{
+.text {
   color: var(--text);
   background-color: var(--dark);
   border-radius: 1em;
@@ -103,14 +102,14 @@ li {
   font-weight: bold;
 }
 
-#description-of-Home{
-  position: absolute; 
+#description-of-Home {
+  position: absolute;
   opacity: 1;
   z-index: 1;
 }
 
-#description-of-Materials{
-  position: absolute; 
+#description-of-Materials {
+  position: absolute;
   opacity: 0;
   z-index: 1;
   display: block;
@@ -122,7 +121,7 @@ li {
   border-radius: 0.8em;
   display: flex;
   justify-content: space-evenly;
-  align-items: center; 
+  align-items: center;
   margin: 1em;
   border-right: 5px solid var(--darkest);
 }
@@ -130,6 +129,7 @@ li {
 .title {
   color: var(--text);
 }
+
 .desc {
   border-left: 5px solid var(--darkest);
   padding: 1em;
@@ -137,44 +137,48 @@ li {
   color: var(--text);
 }
 
-#description-of-Gallery{
-  position: absolute; 
+#description-of-Gallery {
+  position: absolute;
   opacity: 0;
   margin: 2;
   padding: 0;
   width: 60vw;
-  display: flex ;
+  display: flex;
   z-index: 2;
 }
 
-	button {
-		font-size: 3em ;
-		font-weight: bold ;
-		color: darkgray ;
-    z-index: 2;
-	}
-	#frame {
-		width: 30vw;
-		height: 30vw;
-		overflow: hidden ; 
-	}
-	#frieze {
-		height: 30vh ;
-		width: 400% ;
-		transition: transform .5s ease-in-out ;
-    /*  5. Add a flex layout that will line up the slides horizontally: */
-		display: flex;
-	}
-	.slide {
-		width: 30vw;
-		height: 30vw;
-		background-color: var(--accent);
-	}
-	.slide img {
-		object-fit: cover;
-		height: 30vw;
-		width: 30vw;
-	}
+button {
+  font-size: 3em;
+  font-weight: bold;
+  color: darkgray;
+  z-index: 2;
+}
+
+#frame {
+  width: 30vw;
+  height: 30vw;
+  overflow: hidden;
+}
+
+#frieze {
+  height: 30vh;
+  width: 400%;
+  transition: transform .5s ease-in-out;
+  /*  5. Add a flex layout that will line up the slides horizontally: */
+  display: flex;
+}
+
+.slide {
+  width: 30vw;
+  height: 30vw;
+  background-color: var(--accent);
+}
+
+.slide img {
+  object-fit: cover;
+  height: 30vw;
+  width: 30vw;
+}
 
 
 .footer {
@@ -202,15 +206,18 @@ li {
   margin: 1em;
 }
 
-a, li {
-  text-decoration:  none ;
-  font-weight: bold ;
+a,
+li {
+  text-decoration: none;
+  font-weight: bold;
 }
-a:hover, li:hover {
-  cursor: pointer ;
-  text-decoration: underline ;
+
+a:hover,
+li:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 ul {
-  list-style: none ;
+  list-style: none;
 }

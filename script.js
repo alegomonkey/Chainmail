@@ -1,36 +1,36 @@
-function addListeners () {
+function addListeners() {
   document.querySelectorAll("li").forEach(
     menuItem => menuItem.onclick = () => showOnly(menuItem)
   )
-}	
+}
 
 addListeners();
-function showOnly(page) {	 
+function showOnly(page) {
   document.querySelectorAll(".description").forEach(
     descriptionDiv => {
       descriptionDiv.style.opacity = 0;
       descriptionDiv.style.left = "100%";
     }
-  )	    
-  document.querySelector( "#description-of-" + page.innerHTML).style.opacity = 1;
-  document.querySelector( "#description-of-" + page.innerHTML).style.left = "1%";
+  )
+  document.querySelector("#description-of-" + page.innerHTML).style.opacity = 1;
+  document.querySelector("#description-of-" + page.innerHTML).style.left = "1%";
 }
 
-let currentSlideOffset = 0 ;
-const lastSlideOffset = 4 ;
+let currentSlideOffset = 0;
+const lastSlideOffset = 4;
 const slide = direction => {
   if (direction === "forward") {
-    if ( currentSlideOffset == lastSlideOffset ) {
-      return ;
+    if (currentSlideOffset == lastSlideOffset) {
+      return;
     } else {
-      currentSlideOffset++ ;
+      currentSlideOffset++;
     }
-  } else if ( direction === "back" ) {
-    if ( currentSlideOffset == 0 ) {
-      return ;
+  } else if (direction === "back") {
+    if (currentSlideOffset == 0) {
+      return;
     } else {
-      currentSlideOffset-- ;
+      currentSlideOffset--;
     }
-  } ;
-  document.querySelector("#frieze").style.transform = `translateX( ${ currentSlideOffset * -30 }vw )` ;
-} ;
+  };
+  document.querySelector("#frieze").style.transform = `translateX( ${currentSlideOffset * -30}vw )`;
+};
