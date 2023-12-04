@@ -17,7 +17,7 @@ function showOnly(page) {
 }
 
 let currentSlideOffset = 0 ;
-const lastSlideOffset = 6 ;
+const lastSlideOffset = 4 ;
 const slide = direction => {
   if (direction === "forward") {
     if ( currentSlideOffset == lastSlideOffset ) {
