@@ -21,7 +21,7 @@
 body {
   height: 100vh;
   display: grid;
-  background-image: url("https://live.staticflickr.com/2872/9458073788_1c383f4717.jpg");
+  background-image: url("img/LchainmailBG.jpg");
   grid-template:
     "header" 15vh
     "body" 70vh
